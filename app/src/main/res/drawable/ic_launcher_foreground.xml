@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Disco (ISO) com seta de extração -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M54,32 C42.4,32 33,41.4 33,53 C33,64.6 42.4,74 54,74 C65.6,74 75,64.6 75,53 C75,41.4 65.6,32 54,32 Z M54,38 C62.3,38 69,44.7 69,53 C69,61.3 62.3,68 54,68 C45.7,68 39,61.3 39,53 C39,44.7 45.7,38 54,38 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,47 C57.3,47 60,49.7 60,53 C60,56.3 57.3,59 54,59 C50.7,59 48,56.3 48,53 C48,49.7 50.7,47 54,47 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,22 L80,22 L80,38 L74,38 L74,32.2 L62,44.2 L57.8,40 L69.8,28 L64,28 Z" />
+</vector>

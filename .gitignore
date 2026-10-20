@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+# Bibliotecas nativas são geradas pelo cargo-ndk no CI (rust/ -> app/src/main/jniLibs)
+app/src/main/jniLibs/
+# Artefatos de build do Rust
+rust/target/
+Cargo.lock.orig

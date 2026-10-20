@@ -1,0 +1,24 @@
+[package]
+name = "xiso"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "Núcleo Rust do XISO Tool: extração e criação de imagens XISO do Xbox clássico, exposto ao Android via JNI"
+
+[lib]
+name = "xiso"
+crate-type = ["cdylib"]
+
+[dependencies]
+# Biblioteca XDVDFS (ler/criar imagens XISO do Xbox clássico).
+# `sync` transforma as funções async da crate em síncronas (talvez-async is_sync).
+# `read` + `write` + `std` habilitam leitura por streaming e criação de imagens.
+xdvdfs = { version = "=0.8.3", default-features = false, features = ["std", "read", "write", "sync"] }
+jni = "0.21.1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "unwind"
